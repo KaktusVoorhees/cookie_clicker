@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Cookie Clciker</title>
+    <link rel="stylesheet" href="style/main.css">
+</head>
+<body onload="updateInnerHTML(), autoRunes()">
+<div class="header text-center">
+    <img src="img/logo.png" height="128"/>
+</div>
+<div class="center container-rune" onclick="getRunes()">
+    <div class="rune-main pointer" id="rune-main">
+    </div>
+</div>
+<div class="rune-counter center text-center">
+    RUNES: <span id="rune-count">X</span>
+    <div class="stats">GENERATING: <span id="genInner">x</span></div>
+    <div class="stats">MULTIPLIER: <span id="mulInner">x</span></div>
+</div>
+<div class="rune-shop footer text-center">
+    <div>
+        <div class="shop-button pointer float" onclick="buyItem1()">
+            <img src="img/up1.png"/><br>
+            <b>Blink</b> (+1)<br>
+            Price: <span id="price1">x</span>
+        </div>
+        <div class="shop-button pointer float" onclick="buyItem2()">
+            <img src="img/up2.png"/><br>
+            <b>Possession</b> (+10)<br>
+            Price: <span id="price2">x</span>
+        </div>
+        <div class="shop-button pointer float" onclick="buyItem3()">
+            <img src="img/up3.png"/><br>
+            <b>Windblast</b> (+25)<br>
+            Price: <span id="price3">x</span>
+        </div>
+        <div class="shop-button pointer float" onclick="buyItem4()">
+            <img src="img/up4.png"/><br>
+            <b>Dark Vision</b> (+50)<br>
+            Price: <span id="price4">x</span>
+        </div>
+        <div class="shop-button pointer float" onclick="buyItem5()">
+            <img src="img/up5.png"/><br>
+            <b>Dev. Swarm</b> (+100)<br>
+            Price: <span id="price5">x</span>
+        </div>
+        <div class="shop-button pointer float" onclick="buyItem6()">
+            <img src="img/up6.png"/><br>
+            <b>Bend Time</b> (+200)<br>
+            Price: <span id="price6">x</span>
+        </div>
+    </div>
+</div>
+<script src="script/main.js"></script>
+</body>
+</html>
